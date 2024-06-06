@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Bistro</title>
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+
+ 
+
+<!-- top nav bar -->
+<div class="topnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="products.html">products</a>
+  <a href="signupLogin.html">Login</a>
+  <a href="contactUs.html">contect</a>
+  <a href="about.html">About</a>
+</div>
+
+
+<div class="headline-card">
+  <h1> our restrunt selections</h1>
+</div>
+ 
+
+<!-- using https site random image catgory -->
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="https://source.unsplash.com/600x400/?food delivery" alt="burger">
+  </div>
+  <div class="mySlides">
+    <img src="https://source.unsplash.com/600x400/?food" alt="Our Dishes">
+  </div>
+  <div class="mySlides">
+    <img src="https://source.unsplash.com/600x400/?restaurant" alt="Restaurant Interior">
+  </div>
+  <div class="mySlides">
+    <img src="https://source.unsplash.com/600x400/?Shawarma" alt="Shawarma">
+  </div>
+  <div class="mySlides">
+    <img src="https://source.unsplash.com/600x400/?pizza" alt="pizza">
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2>Contact Us</h2> <!-- here im using this site api to submit the form with spicel connection string-->
+    <form action="https://formsubmit.co/el/confirm/7cbb35061bdeb4f2cf06e79c14e43f98 " method="POST"><!-- or Get -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" required></textarea>
+
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_captcha" value="true"><!--verify you are not robot captcha-->
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  
+  <div class="card">
+    <h2>User Reviews</h2>
+    <p><strong>John Doe:</strong> The food was exceptional, and the service was top-notch! Highly recommend. ⭐️⭐️⭐️⭐️⭐️</p>
+    <p><strong>Jane Smith:</strong> Loved the cozy atmosphere and the food was absolutely delicious. ⭐️⭐️⭐️⭐️⭐️</p>
+    <p><strong>Mike Johnson:</strong> A perfect place for a family dinner. Cozy and welcoming, we had a fantastic time. ⭐️⭐️⭐️⭐️⭐️</p>
+    <p><strong>Sarah Thompson:</strong> Impressed by the quality of food and the warm hospitality. Will definitely be returning. ⭐️⭐️⭐️⭐️⭐️</p>
+    <p><strong>David Lee:</strong> Exceeded expectations! Great ambiance and the food was divine. ⭐️⭐️⭐️⭐️⭐️</p>
+    <p><strong>Emily Davis:</strong> Wonderful dining experience from start to finish. Highly recommend for any occasion. ⭐️⭐️⭐️⭐️</p>
+    <p><strong>Michael Chen:</strong> Couldn't have asked for a better evening. The food was superb and the staff were attentive. ⭐️⭐️⭐️⭐️⭐️</p>
+  </div>
+  
+
+
+  <br><br><br><br>
+<h1 style="font-weight: bold;">Our Restaurant Experience Video</h1>
+
+<div class="centered">
+  <iframe width="840" height="480"
+          src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/people-dine-in-restaurant-with-large-windows_wk9_ebezr__877e7147638cc488e697dedc4eeac7e9__P360.mp4">
+  </iframe>
+</div>
+
+<footer>
+  All rights reserved to Tasty Bistro © copyright 
+</footer>
+
+<script  src="./index.js"></script>
+
+</body>
+</html>
