@@ -16,15 +16,15 @@
   <a href="index.html" class="active">Home</a>
   <a href="products.html">products</a>
   <a href="signupLogin.html">Login</a>
-  <a href="contectUs.html">contect</a>
+  <a href="contactUs.html">contect</a>
   <a href="about.html">About</a>
 </div>
 
 
-
-<h1> our restrunt selections</h1>
-
-
+<div class="headline-card">
+  <h1> our restrunt selections</h1>
+</div>
+ 
 
 <!-- using https site random image catgory -->
 <div class="slideshow-container">
@@ -47,8 +47,8 @@
 
 <div class="container">
   <div class="card">
-    <h2>Contact Us</h2>
-    <form action="/submit_form" method="post"><!-- or Get -->
+    <h2>Contact Us</h2> <!-- here im using this site api to submit the form with spicel connection string-->
+    <form action="https://formsubmit.co/el/confirm/7cbb35061bdeb4f2cf06e79c14e43f98 " method="POST"><!-- or Get -->
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Your name.." required>
 
@@ -58,10 +58,14 @@
       <label for="subject">Message</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" required></textarea>
 
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_captcha" value="true"><!--verify you are not robot captcha-->
+
       <input type="submit" value="Submit">
     </form>
   </div>
 
+  
   <div class="card">
     <h2>User Reviews</h2>
     <p><strong>John Doe:</strong> The food was exceptional, and the service was top-notch! Highly recommend. ⭐️⭐️⭐️⭐️⭐️</p>
@@ -84,23 +88,10 @@
   </iframe>
 </div>
 
+<footer>
+  All rights reserved to Tasty Bistro © copyright 
+</footer>
 
-<script>
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // change image every 3 seconds
-  }
-</script>
 <script  src="./index.js"></script>
 
 </body>

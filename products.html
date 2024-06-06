@@ -5,93 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasty Bistro</title>
   <link rel="stylesheet" href="./products.css">
-
 </head>
 <body>
-
- 
-
-<!-- top nav bar -->
-<div class="topnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="products.html">products</a>
-  <a href="signupLogin.html">Login</a>
-  <a href="contectUs.html">contect</a>
-  <a href="about.html">About</a>
-</div>
-
-<h1>our menu products</h1>
-
-<div class="product-list">
-  <div class="product">
-      <img src="image/1.PNG" alt="Plant Dish">
-      <h2>Plant Dish</h2>
-      <p class="price">$15.00</p>
-      <p class="description">A delicious plant-based dish.</p>
+  <!-- top nav bar -->
+  <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="signupLogin.html">Login</a>
+    <a href="contactUs.html">Contact</a>
+    <a href="about.html">About</a>
   </div>
 
-  <div class="product">
-      <img src="image/2.PNG" alt="Wing on the Grill">
-      <h2>Wing on the Grill</h2>
-      <p class="price">$12.00</p>
-      <p class="description">Grilled wings cooked to perfection.</p>
-  </div>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Discover Our Dishes</h1>
+      <p>Experience the finest selection of authentic cuisine</p>
+      <a href="#collection"  class="btn">Shop Now</a>
+    </div>
+  </section>
 
-  <div class="product">
-      <img src="image/3.PNG" alt="Salmon Dish">
-      <h2>Salmon Dish</h2>
-      <p class="price">$61.00</p>
-      <p class="description">Freshly prepared salmon dish.</p>
-  </div>
+  <button class="product-image-button" id="viewCart">
+    <img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="View Cart">
+    <span class="cart-number" id="cartNumber">0</span>
+  </button>
 
-  <div class="product">
-      <img src="image/4.PNG" alt="Sweet Potato Soup">
-      <h2>Sweet Potato Soup</h2>
-      <p class="price">$18.00</p>
-      <p class="description">A warm and comforting sweet potato soup.</p>
-  </div>
+  <section id="collection" class="collection">
+    <div class="product-list">
+      <div class="product" data-product-id="product1">
+        <img id="product1" src="image/1.PNG" alt="Plant Dish">
+        <h2>Plant Dish</h2>
+        <p class="price">$15.00</p>
+        <p class="description">A delicious plant-based dish.</p>
+      </div>
+      <div class="product" data-product-id="product2">
+        <img id="product2" src="image/2.PNG" alt="Wing on the Grill">
+        <h2>Wing on the Grill</h2>
+        <p class="price">$12.00</p>
+        <p class="description">Grilled wings cooked to perfection.</p>
+      </div>
+      <div class="product" data-product-id="product3">
+        <img id="product3" src="image/3.PNG" alt="Salmon Dish">
+        <h2>Salmon Dish</h2>
+        <p class="price">$61.00</p>
+        <p class="description">Freshly prepared salmon dish.</p>
+      </div>
+      <div class="product" data-product-id="product4">
+        <img id="product4" src="image/4.PNG" alt="Sweet Potato Soup">
+        <h2>Sweet Potato Soup</h2>
+        <p class="price">$18.00</p>
+        <p class="description">A warm and comforting sweet potato soup.</p>
+      </div>
+      <div class="product" data-product-id="product5">
+        <img id="product5" src="image/5.PNG" alt="Caesar Salad">
+        <h2>Caesar Salad</h2>
+        <p class="price">$31.00</p>
+        <p class="description">Fresh and crispy Caesar salad.</p>
+      </div>
+      <div class="product" data-product-id="product6">
+        <img id="product6" src="image/6.PNG" alt="Margherita Pizza">
+        <h2>Margherita Pizza</h2>
+        <p class="price">$55.00</p>
+        <p class="description">Classic Margherita pizza with fresh mozzarella and basil.</p>
+      </div>
+      <div class="product" data-product-id="product7">
+        <img id="product7" src="image/7.PNG" alt="Cheese Toast">
+        <h2>Cheese Toast</h2>
+        <p class="price">$23.00</p>
+        <p class="description">Warm and cheesy toast.</p>
+      </div>
+      <div class="product" data-product-id="product8">
+        <img id="product8" src="image/8.PNG" alt="Fried Egg">
+        <h2>Fried Egg</h2>
+        <p class="price">$10.00</p>
+        <p class="description">Perfectly fried egg.</p>
+      </div>
+      <div class="product" data-product-id="product9">
+        <img id="product9" src="image/9.png" alt="Fruit Party Dessert">
+        <h2>Fruit Party Dessert</h2>
+        <p class="price">$43.00</p>
+        <p class="description">A delightful fruit party dessert.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="product">
-      <img src="image/5.PNG" alt="Caesar Salad">
-      <h2>Caesar Salad</h2>
-      <p class="price">$31.00</p>
-      <p class="description">Fresh and crispy Caesar salad.</p>
-  </div>
+  <footer>
+    All rights reserved to Tasty Bistro © copyright
+  </footer>
 
-  <div class="product">
-      <img src="image/6.PNG" alt="Margherita Pizza">
-      <h2>Margherita Pizza</h2>
-      <p class="price">$55.00</p>
-      <p class="description">Classic Margherita pizza with fresh mozzarella and basil.</p>
-  </div>
-
-  <div class="product">
-      <img src="image/7.PNG" alt="Cheese Toast">
-      <h2>Cheese Toast</h2>
-      <p class="price">$23.00</p>
-      <p class="description">Warm and cheesy toast.</p>
-  </div>
-
-  <div class="product">
-      <img src="image/8.PNG" alt="Fried Egg">
-      <h2>Fried Egg</h2>
-      <p class="price">$10.00</p>
-      <p class="description">Perfectly fried egg.</p>
-  </div>
-
-  <div class="product">
-      <img src="image/9.png" alt="Fruit Party Dessert">
-      <h2>Fruit Party Dessert</h2>
-      <p class="price">$43.00</p>
-      <p class="description">A delightful fruit party dessert.</p>
-  </div>
-</div>
-
-
-<script src="products.js"></script>
-
-
-
-
+  <script  src="./products.js"></script>
 </body>
 </html>

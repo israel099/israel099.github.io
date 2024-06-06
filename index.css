@@ -1,136 +1,162 @@
-
 body {
- font-family: Arial, sans-serif;
- margin: 0;
- padding: 0;
- background: url('https://i.pinimg.com/736x/da/07/e2/da07e20718eeab1db7c08a67617ebaf7.jpg') no-repeat center center fixed;
- background-size: cover;
- color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://i.pinimg.com/736x/da/07/e2/da07e20718eeab1db7c08a67617ebaf7.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
+
 .topnav {
- overflow: hidden;
- background-color: #333;
- width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
 }
+
 .topnav a {
- float: left;
- display: block;
- color: #f2f2f2;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
 .topnav a:hover {
- background-color: #ddd;
- color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* style for the slideshow */
 .slideshow-container {
-position: relative;
-max-width: 700px; /* make window smaller */
-margin: 40px auto;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-text-align: center; 
+  position: relative;
+  max-width: 700px; /* make window smaller */
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.mySlides { 
-display: inline-block; 
+.mySlides {
+  display: inline-block;
 }
 
-
-.mySlides img {/*changing the passsing image size */
- width: 80%;
- height: auto; 
+.mySlides img {
+  width: 80%;
+  height: auto;
 }
 
 /* style for the contact and reviews */
 .container {
- padding: 20px;
- width: 80%;
- margin: auto;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
 .card {
- background: #fff;
- border-radius: 10px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- margin: 20px;
- padding: 20px;
- width: 100%;
- max-width: 500px;
- box-sizing: border-box;
- color: black
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  color: black;
 }
+
 .card h2 {
- margin-top: 0;
+  margin-top: 0;
 }
+
 .card form label,
 .card form input,
 .card form textarea {
- display: block;
- width: 100%;
- margin: 10px 0;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
 }
+
 .card form input,
 .card form textarea {
- padding: 10px;
- border-radius: 5px;
- border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
+
 .card form input[type=submit] {
- background-color: #4CAF50;
- color: white;
- border: none;
- cursor: pointer;
- transition: background-color 0.3s;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
 .card form input[type=submit]:hover {
- background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* map style */
 .map-container {
- height: 400px;
- width: 100%;
- border-radius: 10px;
- overflow: hidden;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- margin-top: 20px;
-}
-h1{
- text-align: center;
-}
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-  }
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    margin-left: 100px; 
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
 
+h1 {
+  text-align: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin-left: 100px; 
+}
 
 iframe {
-    margin-top: -100px; 
+  margin-top: -100px; 
 }
+
+img {
+  border: 5px solid #555;
+}
+
+/* headline card style */
+.headline-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #333;
+}
+
+.headline-card h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
